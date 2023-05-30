@@ -1,53 +1,16 @@
-// #root {
-//   max-width: 1280px;
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
-// }
+// Your variable overrides can go here, e.g.:
+// $h1-font-size: 3rem;
 
-// .logo {
-//   height: 6em;
-//   padding: 1.5em;
-//   will-change: filter;
-//   transition: filter 300ms;
-// }
-// .logo:hover {
-//   filter: drop-shadow(0 0 2em #646cffaa);
-// }
-// .logo.react:hover {
-//   filter: drop-shadow(0 0 2em #61dafbaa);
-// }
-
-// @keyframes logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   a:nth-of-type(2) .logo {
-//     animation: logo-spin infinite 20s linear;
-//   }
-// }
-
-// .card {
-//   padding: 2em;
-// }
-
-// .read-the-docs {
-//   color: #888;
-// }
-
-
+@import "bootswatch/dist/morph/variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootswatch/dist/morph/bootswatch";
 
 // -----------------
 
 @mixin base-box {
   margin: 0 auto;
   padding: 0.25rem;
+  
 }
 
 @mixin border1 {
@@ -57,6 +20,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Cera Round Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  // font-size: 20px;
   font-weight: 500;
 }
 
@@ -87,38 +51,16 @@
   border: 1px solid red;
 }
 
-.stats-col {
-  margin: 0;
-}
-
-.stat-item {
-  background-color: white;
-  box-shadow: 1rem;
-}
-
-.text-underline {
-  text-decoration: underline;
-}
-
+// widths
 .w-auto {
   width: auto;
 }
 
 .w-fit {
-  width: fit-content;
+width: fit-content;
 }
 
-.align-span-center {
-  align-items: center;
-}
-
-.current-hp {
-  background-color: white;
-  // box-shadow: 0.25rem;
-  // margin: 0.5rem;
-  padding: 0.25rem;
-}
-
-.status {
-  background-color: rgb(153, 153, 153);
+ // shadow
+.shadow1 {
+  @include shadow();
 }
